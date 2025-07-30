@@ -1,6 +1,15 @@
+:root {
+    --success: #619237;
+    --warning: #e0450c;
+    --dark: #202020;
+}
 * {
     margin: 0; 
     padding: 0;
+    transition: all 0.5s;
+}
+body {
+    font-family: "Roboto", sans-serif;
 }
 .container {
     width: 1140px;
@@ -20,4 +29,17 @@
 }
 .column-gap-3 {
     column-gap: 30px;
+}
+.text-success {
+    color:var(--success);
+}
+.text-decoration-none {
+    text-decoration: none;
+}
+.py-3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.d-inline-block {
+    display: inline-block;
 }
