@@ -8,3 +8,23 @@ a {
  header a:hover {
     border-top-color: var(--warning);
  }
+ .hero {
+   background-image: url('./../img/hero-bg.jpg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+ }
+ .hero form {
+   width: 375px;
+   border-top-left-radius: 30px;
+   border-bottom-right-radius: 30px;
+ }
+ .servicos .d-flex > div {
+  width: 33.33%;
+ }
+ .servicos .capa {
+aspect-ratio: 3/2;
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+ }

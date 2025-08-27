@@ -10,8 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/framework.css" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
@@ -33,8 +40,119 @@
           <li>
             <a href="" class="py-3 d-inline-block"> Contato </a>
           </li>
+          <li>
+            <a href="" class="py-3 d-inline-block position-relative">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span
+                class="bg-warning text-white px-1 rounded-1 position-absolute top-1"
+              >
+                0
+              </span>
+            </a>
+          </li>
         </ul>
       </div>
     </header>
+    <section class="hero py-10">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div>
+          <h2 class="text-white fs-5">
+            Serviço Completo Para
+            <span class="d-block text-uppercase">
+              Residências e Comércios
+            </span>
+          </h2>
+          <h3 class="text-white fs-4">Jardinagem e Manutenção</h3>
+        </div>
+        <form action="" class="bg-warning text-center p-5">
+          <h4 class="text-white text-uppercase fs-3">Agendamento</h4>
+          <p class="text-white text-uppercase mt-1 mb-3">
+            Informe Seus Dados Abaixo
+          </p>
+          <input
+            type="text"
+            placeholder="Nome"
+            required
+            class="d-block w-100 border-0 mt-1 form-control"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            required
+            class="d-block w-100 border-0 mt-1 form-control"
+          />
+          <input
+            type="number"
+            placeholder="Telefone"
+            required
+            class="d-block w-100 border-0 mt-1 form-control"
+          />
+          <input
+            type="date"
+            placeholder="Data"
+            required
+            class="d-block w-100 border-0 mt-1 form-control"
+          />
+          <button
+            type="submit"
+            class="btn mt-2 d-block w-100 btn-dark text-uppercase fw-bold"
+          >
+            Agendar
+          </button>
+        </form>
+      </div>
+    </section>
+    <section class="servicos py-10">
+      <div class="container">
+        <h2 class="text-uppercase fs-4 fw-light text-center mb-5">Serviços</h2>
+        <div class="d-flex column-gap-3">
+          <div>
+            <div
+              class="capa"
+              style="
+                background-image: url('./img/servico-de-corte-e-manutencao.png');
+              "
+            ></div>
+            <h3 class="fs-3 text-warning fw-normal mt-3">Corte e Manutenção</h3>
+            <p class="mt-1 lh-25">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Assumenda facilis, optio iure fuga eum eius doloremque pariatur
+              velit commodi veniam tenetur. Sequi dolor hic porro, sunt iste
+              laboriosam libero. Ullam?
+            </p>
+          </div>
+          <div>
+            <div
+              class="capa"
+              style="
+                background-image: url('./img/servico-de-adubacao-e-fertilizacao.webp');
+              "
+            ></div>
+            <h3 class="fs-3 text-warning fw-normal mt-3">Adubação e Fertilização</h3>
+            <p class="mt-1 lh-25">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
+              architecto magnam, quasi reiciendis tempora similique nisi
+              doloribus nostrum ipsa vitae, inventore necessitatibus explicabo
+              provident, ex tenetur eaque? Facere, perferendis temporibus.
+            </p>
+          </div>
+          <div>
+            <div
+              class="capa"
+              style="
+                background-image: url('./img/servico-controle-de-pragas.jpg');
+              "
+            ></div>
+            <h3 class="fs-3 text-warning fw-normal mt-3">Controle de Pragas</h3>
+            <p class="mt-1 lh-25">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea neque
+              vitae reprehenderit qui ex laudantium, sapiente vel, sed quas
+              magnam quo placeat quidem rem culpa? Commodi iure ipsa quaerat
+              dolores?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
