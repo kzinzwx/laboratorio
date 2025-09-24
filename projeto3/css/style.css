@@ -27,4 +27,32 @@ aspect-ratio: 3/2;
 background-position: center center;
 background-repeat: no-repeat;
 background-size: cover;
+border-top-left-radius: 30px;
+border-bottom-right-radius: 30px;
+ }
+ .servicos a span:first-child {
+  display: inline-block;
+  padding: 7.5px;
+  background-color: var(--success);
+  color: white;
+ }
+ .servicos a:hover span:first-child{
+  border-radius: 50%;
+  background-color: var(--warning);
+ }
+ .servicos a span:last-child {
+  display: inline-block; 
+  margin-left: 15px;
+  color: var(--warning);
+ }
+ .servicos a:hover span:last-child{
+  color: var(--success);
+ }
+ .sobre .item {
+  padding: 20px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+ }
+ .produtos img {
+  max-height: 170px;
+  max-width: 170px;
  }
