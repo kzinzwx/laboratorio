@@ -1,0 +1,67 @@
+a {
+    text-decoration: none; 
+}
+ header a {
+    border-top: 4px solid transparent; 
+    color: var(--dark);
+ }
+ header a:hover {
+    border-top-color: var(--warning);
+ }
+ .hero {
+   background-image: url('./../img/hero-bg.jpg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+ }
+ .hero form {
+   width: 375px;
+   border-top-left-radius: 30px;
+   border-bottom-right-radius: 30px;
+ }
+ .servicos .d-flex > div {
+  width: 33.33%;
+ }
+ .servicos .capa {
+aspect-ratio: 3/2;
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+border-top-left-radius: 30px;
+border-bottom-right-radius: 30px;
+ }
+ .servicos a span:first-child {
+  display: inline-block;
+  padding: 7.5px;
+  background-color: var(--success);
+  color: white;
+ }
+ .servicos a:hover span:first-child{
+  border-radius: 50%;
+  background-color: var(--warning);
+ }
+ .servicos a span:last-child {
+  display: inline-block; 
+  margin-left: 15px;
+  color: var(--warning);
+ }
+ .servicos a:hover span:last-child{
+  color: var(--success);
+ }
+ .sobre .item {
+  padding: 20px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+ }
+ .produtos img {
+  max-height: 170px;
+  max-width: 170px;
+ }
+.numeros i {
+  color: rgba(255, 255, 255, 0.5);
+}
+.depoimentos iframe {
+  width: 33.33%;
+}
+.blog  p {
+line-height: 22.5px
+}
