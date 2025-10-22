@@ -65,3 +65,9 @@ border-bottom-right-radius: 30px;
 .blog  p {
 line-height: 22.5px
 }
+.blog .capa {
+  aspect-ratio: 3/2;
+}
+.blog .container > div {
+  width: 33.33%;
+}
