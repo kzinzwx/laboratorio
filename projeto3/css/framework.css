@@ -22,6 +22,9 @@ body {
 .d-flex {
   display: flex;
 }
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .list-unstyled {
   list-style: none;
 }
@@ -94,11 +97,17 @@ body {
 .bg-success {
   background-color: var(--success);
 }
+.bg-light {
+  background-color: rgba(0, 0, 0, 0.025);
+}
 .text-white {
   color: white;
 }
 .text-warning {
   color: var(--warning);
+}
+.text-danger {
+  color: red;
 }
 .rounded-1 {
   border-radius: 10px;
@@ -111,6 +120,9 @@ body {
 }
 .top-1 {
   top: 10px;
+}
+.w-25 {
+  width: 25%;
 }
 .w-50 {
   width: 50%;
