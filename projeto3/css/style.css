@@ -2,10 +2,12 @@ a {
   text-decoration: none;
 }
 header a {
-  border-top: 4px solid transparent;
   color: var(--dark);
 }
-header a:hover {
+header ul li > a {
+  border-top: 4px solid transparent;
+}
+header ul li > a:hover {
   border-top-color: var(--warning);
 }
 .hero {
@@ -19,8 +21,10 @@ header a:hover {
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
-.servicos .d-flex > div {
-  width: 33.33%;
+@media (min-width: 992px) {
+  .servicos .d-lg-flex > div {
+    width: 33.33%;
+  }
 }
 .servicos .capa {
   aspect-ratio: 3/2;
@@ -60,20 +64,24 @@ header a:hover {
 .numeros i {
   color: rgba(255, 255, 255, 0.5);
 }
-.numeros .container > div {
-  width: 25%;
+@media (min-width: 992px) {
+  .numeros .container > div {
+    width: 25%;
+  }
+  .numeros .container > div:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.25);
+  }
 }
-.numeros .container > div:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 1px;
-  background-color: rgba(255, 255, 255, 0.25);
-}
-.depoimentos iframe {
-  width: 33.33%;
+@media (min-width: 992px) {
+  .depoimentos iframe {
+    width: 33.33%;
+  }
 }
 .blog p {
   line-height: 22.5px;
@@ -86,11 +94,13 @@ header a:hover {
   background-size: cover;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
-.blog .container > div {
-  width: 33.33%;
-}
-.dados .container > div {
-  width: 33.33%;
+@media (min-width: 992px) {
+  .blog .container > div {
+    width: 33.33%;
+  }
+  .dados .container > div {
+    width: 33.33%;
+  }
 }
 .dados i {
   color: rgba(255, 255, 255, 0.5);
@@ -132,7 +142,7 @@ header a:hover {
   background-color: var(--warning);
   color: rgb(255, 255, 255);
 }
-.planos table tr:nth-child(2) td:nth-child(n+2) {
+.planos table tr:nth-child(2) td:nth-child(n + 2) {
   background-color: var(--success);
   color: rgb(255, 255, 255);
 }
@@ -141,4 +151,59 @@ header a:hover {
 }
 .planos table tr:first-child td {
   background-color: white;
+}
+.mapa iframe {
+  height: 500px;
+}
+
+@media (max-width: 991px) {
+  .mapa .dados {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .mapa .dados {
+    line-height: 30px;
+    color: #fff;
+    background-color: var(--success);
+    border: 1px solid;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    z-index: 0;
+  }
+}
+.call-to-action a {
+  border: 3px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  padding: 15px 90px;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.call-to-action a:hover {
+  background-color: #fff;
+  color: var(--warning);
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: var(--warning);
+}
+footer .container:first-child ul > li:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media(max-width:991px){
+  .menu {
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+}
+@media(max-width:991px){
+  .menu>li>a {
+    padding: 10px 0;
+    border-top: none;
+  }
 }

@@ -21,10 +21,23 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="sticky-top bg-white shadow z-2">
-      <div class="container d-flex align-items-center justify-content-between">
-        <h1 class="text-success">Empresa XPTO</h1>
-        <ul class="list-unstyled d-flex column-gap-3">
+    <header class="sticky-top bg-white shadow z-2 py-2 py-lg-0">
+      <div class="container d-lg-flex align-items-center justify-content-between">
+        <div class="d-flex justify-content-between align-items-center">
+          <h1 class="text-success">Empresa XPTO</h1>
+          <div class="d-flex d-lg-none column-gap-4">
+            <a href="" class="position-relative d-inline-block">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span
+                class="bg-warning text-white px-1 rounded-1 position-absolute" style="top:-10px"
+              >
+                0
+              </span>
+            </a>
+            <i class="fa-solid fa-bars cursor-pointer" id="hamburguer"></i>
+          </div>
+        </div>
+        <ul class="list-unstyled d-none d-lg-flex column-gap-3 menu" id="menu">
           <li>
             <a href="" class="py-3 d-inline-block"> Home </a>
           </li>
@@ -40,7 +53,7 @@
           <li>
             <a href="" class="py-3 d-inline-block"> Contato </a>
           </li>
-          <li>
+          <li class="d-none d-lg-inline-block">
             <a href="" class="py-3 d-inline-block position-relative">
               <i class="fa-solid fa-cart-shopping"></i>
               <span
@@ -54,17 +67,21 @@
       </div>
     </header>
     <section class="hero py-10">
-      <div class="container d-flex justify-content-between align-items-center">
+      <div
+        class="container d-lg-flex justify-content-between align-items-center"
+      >
         <div>
-          <h2 class="text-white fs-5">
+          <h2 class="text-white fs-5 text-md-center">
             Serviço Completo Para
             <span class="d-block text-uppercase">
               Residências e Comércios
             </span>
           </h2>
-          <h3 class="text-white fs-4">Jardinagem e Manutenção</h3>
+          <h3 class="text-white fs-4 text-md-center">
+            Jardinagem e Manutenção
+          </h3>
         </div>
-        <form action="" class="bg-warning text-center p-5">
+        <form action="" class="bg-warning text-center p-5 mx-md-auto mt-md-5">
           <h4 class="text-white text-uppercase fs-3">Agendamento</h4>
           <p class="text-white text-uppercase mt-1 mb-3">
             Informe Seus Dados Abaixo
@@ -105,72 +122,7 @@
     <section class="servicos py-10">
       <div class="container">
         <h2 class="text-uppercase fs-4 fw-light text-center mb-5">Serviços</h2>
-        <div class="d-flex column-gap-3">
-          <div>
-            <div
-              class="capa"
-              style="
-                background-image: url('./img/servico-de-corte-e-manutencao.png');
-              "
-            ></div>
-            <h3 class="fs-3 text-warning fw-normal mt-3">Corte e Manutenção</h3>
-            <p class="mt-1 lh-25 mb-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Assumenda facilis, optio iure fuga eum eius doloremque pariatur
-              velit commodi veniam tenetur. Sequi dolor hic porro, sunt iste
-              laboriosam libero. Ullam?
-            </p>
-            <a href="">
-              <span>
-                <i class="fa-solid fa-plus"></i>
-              </span>
-              <span> Saiba Mais </span>
-            </a>
-          </div>
-          <div>
-            <div
-              class="capa"
-              style="
-                background-image: url('./img/servico-de-adubacao-e-fertilizacao.webp');
-              "
-            ></div>
-            <h3 class="fs-3 text-warning fw-normal mt-3">
-              Adubação e Fertilização
-            </h3>
-            <p class="mt-1 lh-25 mb-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
-              architecto magnam, quasi reiciendis tempora similique nisi
-              doloribus nostrum ipsa vitae, inventore necessitatibus explicabo
-              provident, ex tenetur eaque? Facere, perferendis temporibus.
-            </p>
-            <a href="">
-              <span>
-                <i class="fa-solid fa-plus"></i>
-              </span>
-              <span> Saiba Mais </span>
-            </a>
-          </div>
-          <div>
-            <div
-              class="capa"
-              style="
-                background-image: url('./img/servico-controle-de-pragas.jpg');
-              "
-            ></div>
-            <h3 class="fs-3 text-warning fw-normal mt-3">Controle de Pragas</h3>
-            <p class="mt-1 lh-25 mb-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-              distinctio quidem, saepe facilis incidunt fugiat repudiandae
-              maiores deleniti necessitatibus recusandae. Aut necessitatibus
-              explicabo id fugiat rerum qui repellat, dignissimos in.
-            </p>
-            <a href="">
-              <span>
-                <i class="fa-solid fa-plus"></i>
-              </span>
-              <span> Saiba Mais </span>
-            </a>
-          </div>
+        <div class="d-lg-flex column-gap-3" id="lista-servicos">
         </div>
       </div>
     </section>
@@ -188,11 +140,11 @@
           voluptate id. Vero, nesciunt tempore aspernatur facilis mollitia
           laborum maiores reiciendis.
         </p>
-        <div class="mt-4 d-flex justify-content-between align-items-center">
-          <div class="w-50">
+        <div class="mt-4 d-lg-flex justify-content-between align-items-center">
+          <div class="w-lg-50 mb-3 mb-lg-0">
             <img src="./img/empresa.jpg" alt="Empresa XPTO" class="img-fluid" />
           </div>
-          <div class="w-50 ps-5">
+          <div class="w-lg-50 ps-lg-5">
             <div class="item">
               <h3 class="text-uppercase fw-light fs-2">Missão</h3>
               <p>
@@ -227,111 +179,23 @@
     <section class="py-10 produtos">
       <div class="container">
         <h2 class="text-uppercase text-center fs-4 fw-light mb-5">Produtos</h2>
-        <div class="d-flex column-gap-3">
-          <div class="border p-2">
-            <div class="text-center">
-              <img
-                src="./img/Borrifador.webp"
-                alt="Borrifador"
-                class="img-fluid"
-              />
-            </div>
-            <h3 class="mt-1 text-uppercase">Borrifador</h3>
-            <p class="mt-1 mb-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div class="d-flex justify-content-between align-items-center">
-              <span>
-                R$
-                <span class="text-success">34,90</span>
-              </span>
-              <a class="btn btn-success" href=""
-                ><i class="fa-solid fa-plus"></i
-              ></a>
-            </div>
-          </div>
-          <div class="border p-2">
-            <div class="text-center">
-              <img
-                src="./img/cortador-de-grama.jpg"
-                alt="Borrifador"
-                class="img-fluid"
-              />
-            </div>
-            <h3 class="mt-1 text-uppercase">Cortador de Grama</h3>
-            <p class="mt-1 mb-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div class="d-flex justify-content-between align-items-center">
-              <span>
-                R$
-                <span class="text-success">34,90</span>
-              </span>
-              <a class="btn btn-success" href=""
-                ><i class="fa-solid fa-plus"></i
-              ></a>
-            </div>
-          </div>
-          <div class="border p-2">
-            <div class="text-center">
-              <img
-                src="./img/rastelo.webp"
-                alt="Borrifador"
-                class="img-fluid"
-              />
-            </div>
-            <h3 class="mt-1 text-uppercase">Rastelo</h3>
-            <p class="mt-1 mb-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div class="d-flex justify-content-between align-items-center">
-              <span>
-                R$
-                <span class="text-success">34,90</span>
-              </span>
-              <a class="btn btn-success" href=""
-                ><i class="fa-solid fa-plus"></i
-              ></a>
-            </div>
-          </div>
-          <div class="border p-2">
-            <div class="text-center">
-              <img
-                src="./img/tesoura-de-poda.webp"
-                alt="Borrifador"
-                class="img-fluid"
-              />
-            </div>
-            <h3 class="mt-1 text-uppercase">Tesoura de Poda</h3>
-            <p class="mt-1 mb-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div class="d-flex justify-content-between align-items-center">
-              <span>
-                R$
-                <span class="text-success">34,90</span>
-              </span>
-              <a class="btn btn-success" href=""
-                ><i class="fa-solid fa-plus"></i
-              ></a>
-            </div>
-          </div>
+        <div class="d-lg-flex column-gap-3" id="lista-produtos">
         </div>
       </div>
     </section>
     <section class="bg-warning text-white py-10 text-center numeros">
-      <div class="container d-flex">
-        <div class="position-relative">
+      <div class="container d-lg-flex">
+        <div class="position-relative mb-5 mb-lg-0">
           <i class="fa-solid fa-calendar-days fs-5"></i>
           <h3 class="mt-1 fs-3">20</h3>
           <p class="mt-1">Anos de Experiência</p>
         </div>
-        <div class="position-relative">
+        <div class="position-relative mb-5 mb-lg-0">
           <i class="fa-solid fa-user-group fs-5"></i>
           <h3 class="mt-1 fs-3">350+</h3>
           <p class="mt-1">Clientes Atendidos</p>
         </div>
-        <div class="position-relative">
+        <div class="position-relative mb-5 mb-lg-0">
           <i class="fa-solid fa-list-check fs-5"></i>
           <h3 class="mt-1 fs-3">1.200+</h3>
           <p class="mt-1">Projetos Dsenvolvidos</p>
@@ -390,9 +254,9 @@
       <h2 class="text-center mb-5 text-uppercase fw-light fs-4 text-white">
         Depoimentos
       </h2>
-      <div class="container d-flex column-gap-3">
+      <div class="container d-lg-flex column-gap-3">
         <iframe
-          class="ratio-3x2"
+          class="ratio-3x2 mb-5 mb-lg-0"
           src="https://www.youtube.com/embed/REWTso9M-2M?si=bSdiLtHHZ2TtN1gS"
           title="YouTube video player"
           frameborder="0"
@@ -401,7 +265,7 @@
           allowfullscreen
         ></iframe>
         <iframe
-          class="ratio-3x2"
+          class="ratio-3x2 mb-5 mb-lg-0"
           src="https://www.youtube.com/embed/REWTso9M-2M?si=bSdiLtHHZ2TtN1gS"
           title="YouTube video player"
           frameborder="0"
@@ -460,52 +324,54 @@
     <section class="text-center planos py-10">
       <h2 class="text-uppercase fs-4 fw-light mb-5">Planos</h2>
       <div class="container">
-        <table class="w-100">
-          <tbody>
-            <tr>
-              <td></td>
-              <td>Standart</td>
-              <td>Premium</td>
-              <td>Business</td>
-            </tr>
-            <tr>
-              <td>Serviços</td>
-              <td>R$ 99,90</td>
-              <td>R$ 149,90</td>
-              <td>R$ 199,90</td>
-            </tr>
-            <tr>
-              <td>Serviço 1</td>
-              <td><i class="fa-solid fa-check text-success"></i></td>
-              <td><i class="fa-solid fa-check text-success"></i></td>
-              <td><i class="fa-solid fa-check text-success"></i></td>
-            </tr>
-            <tr>
-              <td>Serviço 2</td>
-              <td><i class="fa-solid fa-xmark text-danger"></i></td>
-              <td><i class="fa-solid fa-check text-success"></i></td>
-              <td><i class="fa-solid fa-check text-success"></i></td>
-            </tr>
-            <tr>
-              <td>Serviço 3</td>
-              <td><i class="fa-solid fa-xmark text-danger"></i></td>
-              <td><i class="fa-solid fa-check text-danger"></i></td>
-              <td><i class="fa-solid fa-check text-success"></i></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td><a href="">Comprar</a></td>
-              <td><a href="">Comprar</a></td>
-              <td><a href="">Comprar</a></td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="table-responsive">
+          <table class="w-100">
+            <tbody>
+              <tr>
+                <td></td>
+                <td>Standart</td>
+                <td>Premium</td>
+                <td>Business</td>
+              </tr>
+              <tr>
+                <td>Serviços</td>
+                <td>R$ 99,90</td>
+                <td>R$ 149,90</td>
+                <td>R$ 199,90</td>
+              </tr>
+              <tr>
+                <td>Serviço 1</td>
+                <td><i class="fa-solid fa-check text-success"></i></td>
+                <td><i class="fa-solid fa-check text-success"></i></td>
+                <td><i class="fa-solid fa-check text-success"></i></td>
+              </tr>
+              <tr>
+                <td>Serviço 2</td>
+                <td><i class="fa-solid fa-xmark text-danger"></i></td>
+                <td><i class="fa-solid fa-check text-success"></i></td>
+                <td><i class="fa-solid fa-check text-success"></i></td>
+              </tr>
+              <tr>
+                <td>Serviço 3</td>
+                <td><i class="fa-solid fa-xmark text-danger"></i></td>
+                <td><i class="fa-solid fa-check text-danger"></i></td>
+                <td><i class="fa-solid fa-check text-success"></i></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><a href="" class="btn btn-warning d-block">Comprar</a></td>
+                <td><a href="" class="btn btn-warning d-block">Comprar</a></td>
+                <td><a href="" class="btn btn-warning d-block">Comprar</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
-    <section class="py-10 blog">
+    <section class="py-10 blog bg-light">
       <h2 class="text-center mb-5 fw-light fs-4 text-uppercase">Blog</h2>
-      <div class="container d-flex column-gap-3">
-        <div>
+      <div class="container d-lg-flex column-gap-3">
+        <div class="mb-5 mb-lg-0">
           <div
             style="background-image: url('./img/noticia1.webp')"
             class="capa"
@@ -519,7 +385,7 @@
           </p>
           <a href="" class="text-warning"> Leia mais </a>
         </div>
-        <div>
+        <div class="mb-5 mb-lg-0">
           <div
             style="background-image: url('./img/noticia2.webp')"
             class="capa"
@@ -550,8 +416,8 @@
       </div>
     </section>
     <section class="dados text-center bg-warning text-white py-10">
-      <div class="container d-flex">
-        <div>
+      <div class="container d-lg-flex">
+        <div class="mb-5 mb-lg-0">
           <i class="fa-solid fa-location-dot fs-4 mb-1"></i>
           <div>
             Rua Paraiso 123, Centro
@@ -559,7 +425,7 @@
             Lins - SP
           </div>
         </div>
-        <div>
+        <div class="mb-5 mb-lg-0">
           <i class="fa-solid fa-envelope fs-4 mb-1"></i>
           <div>contato@empresaxpto.com.br</div>
         </div>
@@ -569,5 +435,129 @@
         </div>
       </div>
     </section>
+    <section class="mapa position-relative">
+      <div class="dados p-5 d-flex align-items-center">
+        Rua Bela Vista 123, Centro - Lins / SP
+        <br />
+        contato@empresaxpto.com
+        <br />
+        (14) 3333-0001
+      </div>
+      <iframe
+        class="w-100"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d609.7145884403718!2d-49.75211186670392!3d-21.690704678746336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94be15bfe16d0a73%3A0x5b13b5e5f48d1750!2sR.%20El%C3%ADas%20Gon%C3%A7alves%20Salvador%20-%20Lins%2C%20SP%2C%2016403-250!5e0!3m2!1spt-BR!2sbr!4v1764191515505!5m2!1spt-BR!2sbr"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <section class="py-10 bg-warning text-white call-to-action">
+      <div
+        class="container d-lg-flex justify-content-between align-items-center column-gap-3"
+      >
+        <h2 class="fw-light fs-3 mb-3 mb-lg-0 text-center text-lg-start">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti,
+          minus alias.
+        </h2>
+        <div class="text-center text-lg-end">
+          <a href="" class="btn btn-warning">AGENDAR</a>
+        </div>
+      </div>
+    </section>
+    <section class="py-10">
+      <div class="container">
+        <h2 class="fw-light fs-4 text-center mb-5 text-uppercase">
+          Fale Conosco
+        </h2>
+        <form action="">
+          <input
+            type="text"
+            placeholder="Nome"
+            class="d-block w-100 mb-1 form-control border"
+          />
+          <input
+            type="text"
+            placeholder="Email"
+            class="d-block w-100 mb-1 form-control border"
+          />
+          <input
+            type="text"
+            placeholder="Telefone"
+            class="d-block w-100 mb-1 form-control border"
+          />
+          <textarea
+            placeholder="Menssagem"
+            class="d-block w-100 mb-1 form-control border"
+          ></textarea>
+          <button type="submit" class="w-100 btn btn-success text-uppercase">
+            Enviar
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer class="bg-dark text-white py-5 text-center text-lg-start">
+      <div class="container d-lg-flex justify-content-between">
+        <div class="mb-5 mb-lg-0">
+          <h3 class="mb-1">Menu</h3>
+          <ul class="list-unstyled">
+            <li><a href="">Home</a></li>
+            <li><a href="">Sobre</a></li>
+            <li><a href="">Serviços</a></li>
+            <li><a href="">Produtos</a></li>
+            <li><a href="">Contato</a></li>
+          </ul>
+        </div>
+        <div class="mb-5 mb-lg-0">
+          <h3 class="mb-1">Produtos</h3>
+          <ul class="list-unstyled">
+            <li><a href="">Categoria A</a></li>
+            <li><a href="">Categoria B</a></li>
+          </ul>
+        </div>
+        <div class="mb-5 mb-lg-0">
+          <h3 class="mb-1">Serviços</h3>
+          <ul class="list-unstyled">
+            <li><a href="">Serviço A</a></li>
+            <li><a href="">Serviço B</a></li>
+            <li><a href="">Serviço C</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-1">Newsletter</h3>
+          <form action="">
+            <input
+              type="text"
+              placeholder="Email"
+              class="form-control d-inline-block d-lg-block"
+            />
+            <button type="submit" class="btn btn-success mt-1">
+              Inscrever
+            </button>
+          </form>
+        </div>
+      </div>
+      <div
+        class="container d-lg-flex justify-content-between mt-5 pt-5 border-top border-white"
+      >
+        <small class="d-block mb-5 mb-lg-0">
+          &copy; 2025 Empresa XPTO. Todos os direitos reservados.
+        </small>
+        <div class="d-inline-block">
+          <ul class="d-flex list-unstyled">
+            <li class="me-1">
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li class="me-1">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
