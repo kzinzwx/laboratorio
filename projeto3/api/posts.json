@@ -1,23 +1,23 @@
 [
   {
     "id": 1,
-    "nome": "Corte e Manutenção",
+    "titulo": "Título 1",
     "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi architecto magnam, quasi reiciendis tempora similique nisi doloribus nostrum ipsa vitae, inventore necessitatibus explicabo provident, ex tenetur eaque? Facere, perferendis temporibus.",
-    "imagem": "servico-de-corte-e-manutencao.png",
+    "imagem": "noticia1.webp",
     "url": ""
   },
   {
     "id" :2,
-    "nome": "Adubação e Fertilização",
+    "titulo": "Título 2",
     "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi architecto magnam, quasi reiciendis tempora similique nisi doloribus nostrum ipsa vitae, inventore necessitatibus explicabo provident, ex tenetur eaque? Facere, perferendis temporibus.",
-    "imagem": "servico-de-adubacao-e-fertilizacao.webp",
+    "imagem": "noticia2.webp",
     "url": ""
   },
   {
     "id": 3,
-    "nome": "Controle de Insetos",
+    "titulo": "Título 3",
     "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi architecto magnam, quasi reiciendis tempora similique nisi doloribus nostrum ipsa vitae, inventore necessitatibus explicabo provident, ex tenetur eaque? Facere, perferendis temporibus.",
-    "imagem" : "servico-controle-de-pragas.jpg",
+    "imagem" : "noticia3.webp",
     "url": ""
   }
 ]

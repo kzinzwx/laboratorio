@@ -56,3 +56,45 @@ window
       `;
     });
   });
+window
+  .fetch("http://127.0.0.1:5500/api/posts.json")
+  .then((resposta) => resposta.json())
+  .then((posts) => {
+    posts.forEach((post)=>{
+      document.getElementById('lista-posts').innerHTML +=`
+          <div class="mb-5 mb-lg-0">
+          <div
+            style="background-image: url('./img/${post.imagem}')"
+            class="capa"
+          ></div>
+          <h3 class="fs-3 fw-normal mb-1 mt-3">${post.titulo}</h3>
+          <p class="mb-1">
+          ${post.descricao}
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+            consequuntur doloribus porro pariatur? Facilis maxime nulla
+            excepturi doloremque illo unde illum molestiae deleniti consectetur
+            odit? Omnis voluptate deleniti voluptatibus distinctio.
+          </p>
+          <a href="${post.url}" class="text-warning"> Leia mais </a>
+        </div>
+      `;
+    });
+  });
+  window
+  .fetch("http://127.0.0.1:5500/api/depoimentos.json")
+  .then((resposta) => resposta.json())
+  .then((depoimentos) => {
+    depoimentos.forEach((depoimento)=>{
+      document.getElementById('lista-depoimentos').innerHTML +=`
+         <iframe
+          class="ratio-3x2 mb-5 mb-lg-0"
+          src="https://www.youtube.com/embed/${depoimento.codigo}"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      `;
+    });
+  });
