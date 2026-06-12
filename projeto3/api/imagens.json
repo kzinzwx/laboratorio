@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi architecto magnam, quasi reiciendis tempora similique nisi doloribus nostrum ipsa vitae, inventore necessitatibus explicabo provident, ex tenetur eaque? Facere, perferendis temporibus.",
+    "imagem": "galeria1.jfif"
+  },
+  {
+    "id" :2,
+    "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi architecto magnam, quasi reiciendis tempora similique nisi doloribus nostrum ipsa vitae, inventore necessitatibus explicabo provident, ex tenetur eaque? Facere, perferendis temporibus.",
+    "imagem": "galeria2.jfif"
+  },
+  {
+    "id": 3,
+    "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi architecto magnam, quasi reiciendis tempora similique nisi doloribus nostrum ipsa vitae, inventore necessitatibus explicabo provident, ex tenetur eaque? Facere, perferendis temporibus.",
+    "imagem" : "galeria3.jfif"
+  },
+  {
+    "id": 4,
+    "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi architecto magnam, quasi reiciendis tempora similique nisi doloribus nostrum ipsa vitae, inventore necessitatibus explicabo provident, ex tenetur eaque? Facere, perferendis temporibus.",
+    "imagem" : "galeria4.jfif"
+  },
+  {
+    "id": 5,
+    "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi architecto magnam, quasi reiciendis tempora similique nisi doloribus nostrum ipsa vitae, inventore necessitatibus explicabo provident, ex tenetur eaque? Facere, perferendis temporibus.",
+    "imagem" : "galeria5.jpg"
+  },
+  {
+    "id": 6,
+    "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi architecto magnam, quasi reiciendis tempora similique nisi doloribus nostrum ipsa vitae, inventore necessitatibus explicabo provident, ex tenetur eaque? Facere, perferendis temporibus.",
+    "imagem" : "galeria6.jfif"
+  },
+  {
+    "id": 7,
+    "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi architecto magnam, quasi reiciendis tempora similique nisi doloribus nostrum ipsa vitae, inventore necessitatibus explicabo provident, ex tenetur eaque? Facere, perferendis temporibus.",
+    "imagem" : "galeria7.jpg"
+  },
+  {
+    "id": 8,
+    "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi architecto magnam, quasi reiciendis tempora similique nisi doloribus nostrum ipsa vitae, inventore necessitatibus explicabo provident, ex tenetur eaque? Facere, perferendis temporibus.",
+    "imagem" : "galeria8.jpg"
+  },
+  {
+    "id": 9,
+    "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi architecto magnam, quasi reiciendis tempora similique nisi doloribus nostrum ipsa vitae, inventore necessitatibus explicabo provident, ex tenetur eaque? Facere, perferendis temporibus.",
+    "imagem" : "galeria8.jpg"
+  }
+]

@@ -98,3 +98,16 @@ window
       `;
     });
   });
+  window
+  .fetch("http://127.0.0.1:5500/api/imagens.json")
+  .then((resposta) => resposta.json())
+  .then((imagens) => {
+    imagens.forEach((imagem)=>{
+      document.getElementById('lista-imagens').innerHTML +=`
+         <div
+          class="imagem w-25"
+          style="background-image: url('./img/${imagem.imagem}')"
+        ></div>
+      `;
+    });
+  });

@@ -26,12 +26,5 @@
     "preco": 45.9,
     "imagem": "tesoura-de-poda.webp",
     "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
-  },
-  {
-    "id": 5,
-    "nome": "Tesoura",
-    "preco": 25.9,
-    "imagem": "tesoura-para-cerca-viva.webp",
-    "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
   }
 ]

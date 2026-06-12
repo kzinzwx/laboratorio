@@ -4,20 +4,20 @@
     "nome": "Corte e Manutenção",
     "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi architecto magnam, quasi reiciendis tempora similique nisi doloribus nostrum ipsa vitae, inventore necessitatibus explicabo provident, ex tenetur eaque? Facere, perferendis temporibus.",
     "imagem": "servico-de-corte-e-manutencao.png",
-    "url": ""
+    "url": "servicos-corte-e-manutencao.html"
   },
   {
     "id" :2,
     "nome": "Adubação e Fertilização",
     "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi architecto magnam, quasi reiciendis tempora similique nisi doloribus nostrum ipsa vitae, inventore necessitatibus explicabo provident, ex tenetur eaque? Facere, perferendis temporibus.",
     "imagem": "servico-de-adubacao-e-fertilizacao.webp",
-    "url": ""
+    "url": "servicos-adubacao-e-fertilizacao.html"
   },
   {
     "id": 3,
     "nome": "Controle de Insetos",
     "descricao": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi architecto magnam, quasi reiciendis tempora similique nisi doloribus nostrum ipsa vitae, inventore necessitatibus explicabo provident, ex tenetur eaque? Facere, perferendis temporibus.",
     "imagem" : "servico-controle-de-pragas.jpg",
-    "url": ""
+    "url": "servicos-controle-de-pragas.html"
   }
 ]

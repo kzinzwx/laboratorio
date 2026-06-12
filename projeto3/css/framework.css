@@ -295,6 +295,10 @@ body {
   background-color: var(--warning);
   color: #fff;
 }
+.btn-light {
+  background-color: #f8f9fa;
+  color: #202020;
+}
 .fw-light {
   font-weight: 300;
 }
@@ -306,6 +310,9 @@ body {
 }
 .lh-25 {
   line-height: 22.5px;
+}
+.lh-30 {
+  line-height: 30px;
 }
 .sticky-top {
   position: sticky;
@@ -328,4 +335,14 @@ body {
 }
 .cursor-pointer {
   cursor: pointer;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th, .table td {
+  padding: 15px;
+}
+.table-bordered th, .table-bordered td {
+  border: 1px solid rgba(0, 0, 0, 0.25);
 }

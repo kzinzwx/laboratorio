@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empresa XPTO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/framework.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="sticky-top bg-white shadow z-2 py-2 py-lg-0">
+      <div class="container d-lg-flex align-items-center justify-content-between">
+        <div class="d-flex justify-content-between align-items-center">
+          <h1 class="text-success">Empresa XPTO</h1>
+          <div class="d-flex d-lg-none column-gap-4">
+            <a href="./carrinho.html" class="position-relative d-inline-block">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span
+                class="bg-warning text-white px-1 rounded-1 position-absolute" style="top:-10px"
+              >
+                0
+              </span>
+            </a>
+            <i class="fa-solid fa-bars cursor-pointer" id="hamburguer"></i>
+          </div>
+        </div>
+        <ul class="list-unstyled d-none d-lg-flex column-gap-3 menu" id="menu">
+          <li>
+            <a href="./index.html" class="py-3 d-inline-block"> Home </a>
+          </li>
+          <li>
+            <a href="./sobre.html" class="py-3 d-inline-block"> Sobre </a>
+          </li>
+          <li>
+            <a href="./servicos.html" class="py-3 d-inline-block"> Serviços </a>
+          </li>
+          <li>
+            <a href="./produtos.html" class="py-3 d-inline-block"> Produtos </a>
+          </li>
+          <li>
+            <a href="./contato.html" class="py-3 d-inline-block"> Contato </a>
+          </li>
+          <li class="d-none d-lg-inline-block">
+            <a href="./carrinho.html" class="py-3 d-inline-block position-relative">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span
+                class="bg-warning text-white px-1 rounded-1 position-absolute top-1"
+              >
+                0
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+       <section class="py-3 bg-light">
+      <div class="container">
+        <h2 class="text-uppercase fw-light fs-3">Contato</h2>
+      </div>
+    </section>
+    <section class="dados text-center bg-warning text-white py-10">
+      <div class="container d-lg-flex">
+        <div class="mb-5 mb-lg-0">
+          <i class="fa-solid fa-location-dot fs-4 mb-1"></i>
+          <div>
+            Rua Paraiso 123, Centro
+            <br />
+            Lins - SP
+          </div>
+        </div>
+        <div class="mb-5 mb-lg-0">
+          <i class="fa-solid fa-envelope fs-4 mb-1"></i>
+          <div>contato@empresaxpto.com.br</div>
+        </div>
+        <div>
+          <i class="fa-solid fa-phone fs-4 mb-1"></i>
+          <div>0800-123-4567</div>
+        </div>
+      </div>
+    </section>
+    <section class="mapa position-relative">
+      <div class="dados p-5 d-flex align-items-center">
+        Rua Bela Vista 123, Centro - Lins / SP
+        <br />
+        contato@empresaxpto.com
+        <br />
+        (14) 3333-0001
+      </div>
+      <iframe
+        class="w-100"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d609.7145884403718!2d-49.75211186670392!3d-21.690704678746336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94be15bfe16d0a73%3A0x5b13b5e5f48d1750!2sR.%20El%C3%ADas%20Gon%C3%A7alves%20Salvador%20-%20Lins%2C%20SP%2C%2016403-250!5e0!3m2!1spt-BR!2sbr!4v1764191515505!5m2!1spt-BR!2sbr"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <section class="py-10 bg-warning text-white call-to-action">
+      <div
+        class="container d-lg-flex justify-content-between align-items-center column-gap-3"
+      >
+        <h2 class="fw-light fs-3 mb-3 mb-lg-0 text-center text-lg-start">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti,
+          minus alias.
+        </h2>
+        <div class="text-center text-lg-end">
+          <a href="" class="btn btn-warning">AGENDAR</a>
+        </div>
+      </div>
+    </section>
+    <section class="py-10">
+      <div class="container">
+        <h2 class="fw-light fs-4 text-center mb-5 text-uppercase">
+          Fale Conosco
+        </h2>
+        <form action="">
+          <input
+            type="text"
+            placeholder="Nome"
+            class="d-block w-100 mb-1 form-control border"
+          />
+          <input
+            type="text"
+            placeholder="Email"
+            class="d-block w-100 mb-1 form-control border"
+          />
+          <input
+            type="text"
+            placeholder="Telefone"
+            class="d-block w-100 mb-1 form-control border"
+          />
+          <textarea
+            placeholder="Menssagem"
+            class="d-block w-100 mb-1 form-control border"
+          ></textarea>
+          <button type="submit" class="w-100 btn btn-success text-uppercase">
+            Enviar
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer class="bg-dark text-white py-5 text-center text-lg-start">
+      <div class="container d-lg-flex justify-content-between">
+        <div class="mb-5 mb-lg-0">
+          <h3 class="mb-1">Menu</h3>
+          <ul class="list-unstyled">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+            <li><a href="./servicos.html">Serviços</a></li>
+            <li><a href="./produtos.html">Produtos</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="mb-5 mb-lg-0">
+          <h3 class="mb-1">Produtos</h3>
+          <ul class="list-unstyled">
+            <li><a href="./produtos.html?categoria=1">Categoria A</a></li>
+            <li><a href="./produtos.html?categoria=2">Categoria B</a></li>
+          </ul>
+        </div>
+        <div class="mb-5 mb-lg-0">
+          <h3 class="mb-1">Serviços</h3>
+          <ul class="list-unstyled">
+            <li><a href="./servicos/corte-e-manutencao.html">Serviço A</a></li>
+            <li><a href="./servicos/adubacao-e-fertilizacao.html">Serviço B</a></li>
+            <li><a href="./servicos/controle-de-pragas.html">Serviço C</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-1">Newsletter</h3>
+          <form action="">
+            <input
+              type="text"
+              placeholder="Email"
+              class="form-control d-inline-block d-lg-block"
+            />
+            <button type="submit" class="btn btn-success mt-1">
+              Inscrever
+            </button>
+          </form>
+        </div>
+      </div>
+      <div
+        class="container d-lg-flex justify-content-between mt-5 pt-5 border-top border-white"
+      >
+        <small class="d-block mb-5 mb-lg-0">
+          &copy; 2025 Empresa XPTO. Todos os direitos reservados.
+        </small>
+        <div class="d-inline-block">
+          <ul class="d-flex list-unstyled">
+            <li class="me-1">
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li class="me-1">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

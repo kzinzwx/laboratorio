@@ -207,3 +207,15 @@ footer .container:first-child ul > li:not(:last-child) {
     border-top: none;
   }
 }
+.servico .capa {
+  aspect-ratio: 3/2;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.servico i {
+  font-size: 30px;
+}
+.servico .icone {
+  width: 50px;
+}

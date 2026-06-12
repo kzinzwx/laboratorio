@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empresa XPTO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/framework.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="servico">
+    <header class="sticky-top bg-white shadow z-2 py-2 py-lg-0">
+      <div
+        class="container d-lg-flex align-items-center justify-content-between"
+      >
+        <div class="d-flex justify-content-between align-items-center">
+          <h1 class="text-success">Empresa XPTO</h1>
+          <div class="d-flex d-lg-none column-gap-4">
+            <a href="./carrinho.html" class="position-relative d-inline-block">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span
+                class="bg-warning text-white px-1 rounded-1 position-absolute"
+                style="top: -10px"
+              >
+                0
+              </span>
+            </a>
+            <i class="fa-solid fa-bars cursor-pointer" id="hamburguer"></i>
+          </div>
+        </div>
+        <ul class="list-unstyled d-none d-lg-flex column-gap-3 menu" id="menu">
+          <li>
+            <a href="./index.html" class="py-3 d-inline-block"> Home </a>
+          </li>
+          <li>
+            <a href="./sobre.html" class="py-3 d-inline-block"> Sobre </a>
+          </li>
+          <li>
+            <a href="./servicos.html" class="py-3 d-inline-block"> Serviços </a>
+          </li>
+          <li>
+            <a href="./produtos.html" class="py-3 d-inline-block"> Produtos </a>
+          </li>
+          <li>
+            <a href="./contato.html" class="py-3 d-inline-block"> Contato </a>
+          </li>
+          <li class="d-none d-lg-inline-block">
+            <a
+              href="./carrinho.html"
+              class="py-3 d-inline-block position-relative"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span
+                class="bg-warning text-white px-1 rounded-1 position-absolute top-1"
+              >
+                0
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="py-3 bg-light">
+      <div class="container">
+        <h2 class="text-uppercase fw-light fs-3">Corte e Manutenção</h2>
+      </div>
+    </section>
+    <section class="servicos py-10">
+      <div class="container d-flex column-gap-3">
+        <div class="w-50">
+          <div style="background-image: url('./img/servico-controle-de-pragas.jpg');" class="capa">
+          </div>
+        </div>
+        <div class="w-50">
+          <p class="lh-30 fs-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quia
+            dolore libero nulla? Ullam amet ducimus placeat, eveniet architecto
+            aliquid eaque quaerat nobis ipsam saepe animi incidunt qui in natus.
+          </p>
+          <div class="mt-3 d-flex align-items-center">
+            <div class="icone">
+              <i class="fa-regular fa-clock text-warning"></i>
+            </div>
+            <div>
+              Tempo de execução
+              <br>
+              10 horas
+            </div>
+          </div>
+          <div class="mt-3 d-flex align-items-center">
+            <div class="icone">
+              <i class="fa-regular fa-calendar text-warning"></i>
+            </div>
+            <div>
+              Validade
+              <br>
+              90 dias
+            </div>
+          </div>
+          <div class="mt-3 d-flex align-items-center">
+            <div class="icone">
+              <i class="fa-solid fa-dollar-sign text-warning"></i>
+            </div>
+            <div>
+              Valor
+              <br>
+              500,00
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark text-white py-5 text-center text-lg-start">
+      <div class="container d-lg-flex justify-content-between">
+        <div class="mb-5 mb-lg-0">
+          <h3 class="mb-1">Menu</h3>
+          <ul class="list-unstyled">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+            <li><a href="./servicos.html">Serviços</a></li>
+            <li><a href="./produtos.html">Produtos</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="mb-5 mb-lg-0">
+          <h3 class="mb-1">Produtos</h3>
+          <ul class="list-unstyled">
+            <li><a href="./produtos.html?categoria=1">Categoria A</a></li>
+            <li><a href="./produtos.html?categoria=2">Categoria B</a></li>
+          </ul>
+        </div>
+        <div class="mb-5 mb-lg-0">
+          <h3 class="mb-1">Serviços</h3>
+          <ul class="list-unstyled">
+            <li><a href="./servicos/corte-e-manutencao.html">Serviço A</a></li>
+            <li>
+              <a href="./servicos/adubacao-e-fertilizacao.html">Serviço B</a>
+            </li>
+            <li><a href="./servicos/controle-de-pragas.html">Serviço C</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-1">Newsletter</h3>
+          <form action="">
+            <input
+              type="text"
+              placeholder="Email"
+              class="form-control d-inline-block d-lg-block"
+            />
+            <button type="submit" class="btn btn-success mt-1">
+              Inscrever
+            </button>
+          </form>
+        </div>
+      </div>
+      <div
+        class="container d-lg-flex justify-content-between mt-5 pt-5 border-top border-white"
+      >
+        <small class="d-block mb-5 mb-lg-0">
+          &copy; 2025 Empresa XPTO. Todos os direitos reservados.
+        </small>
+        <div class="d-inline-block">
+          <ul class="d-flex list-unstyled">
+            <li class="me-1">
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li class="me-1">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
